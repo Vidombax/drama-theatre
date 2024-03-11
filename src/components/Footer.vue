@@ -18,7 +18,9 @@
         </div>  
       </div>
     </div>
-    <div class="line"></div>
+    <div class="flex justify-center">
+      <div class="line"></div>
+    </div>
     <p class="pravo">Все права принадлежат драмтеатру</p>
 </template>
 
@@ -46,8 +48,7 @@
     border-bottom: solid 2px #ffffff3f;
     border-radius: 2px;
     margin-top: 4rem;
-    width: 1500px;
-    margin-left: 10rem;
+    width: 100rem;
   }
   .pravo {
     color: #ffffff3f;
@@ -57,3 +58,5 @@
     margin-top: 4rem;
   }
 </style>
+<script setup>
+</script>

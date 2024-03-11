@@ -1,26 +1,37 @@
+<script setup>
+  defineProps({
+    Data: String,
+    ImageSrc: String,
+    Name: String,
+    Info: String,
+    Genre: String,
+    Time: String,
+    Age: Number
+  })
+</script>
 <template>
     <div class="meeting mb-8">
         <div class="posterDiv">
-            <p class="goticFont font-bold text-5xl text-center w-26 day">3 июня</p> 
-            <img src="/poster.jpeg" alt="MeetingPhoto" class="meetingPhoto">
+            <p class="goticFont font-bold text-5xl text-center w-26 day">{{ Data }}</p>
+            <img :src="ImageSrc" alt="MeetingPhoto" class="meetingPhoto">
         </div>
     <div class="grid items-center">
         <div class="infoAboutNameMeeting gap-2">
-            <p class="goticFont text-3xl font-bold">Антонио Вивальди. Времена года</p>
-            <p class="mb-6">Посвящение Фрэнку Синатре.</p>  
+            <p class="goticFont text-3xl font-bold">{{ Name }}</p>
+            <p class="mb-6">{{ Info }}</p>
         </div>            
         <div class="littleInfoMeeting gap-12">
             <div class="littleInfo">
                 <img src="/music.png" alt="Music">
-                <p>Джаз</p>
+                <p>{{ Genre }}</p>
             </div>                
             <div class="littleInfo">
                 <img src="/time.png" alt="Time">
-                <p>19:00</p>
+                <p>{{ Time }}</p>
             </div>                
             <div class="littleInfo">
                 <img src="/age.png" alt="Age">
-                <p>6+</p>
+                <p>{{ Age }}+</p>
             </div>                
         </div>
     </div>
