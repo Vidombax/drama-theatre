@@ -2,9 +2,26 @@
   import Header from './components/Header.vue'
   import Main from './components/Main.vue'
   import Footer from './components/Footer.vue'
+  import OrderWindow from "./components/OrderWindow.vue";
+  import {provide, ref} from "vue";
+
+  const orderWindowOpen = ref(false)
+
+  const closeOrderWindow = () => {
+    orderWindowOpen.value = false
+  }
+  const openOrderWindow = () => {
+    orderWindowOpen.value = true
+  }
+
+  provide('app', {
+    closeOrderWindow,
+    openOrderWindow
+  })
 </script>
 
 <template>
+  <OrderWindow v-if="orderWindowOpen"/>
   <header>
     <Header />
   </header>

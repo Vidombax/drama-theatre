@@ -1,4 +1,6 @@
 <script setup>
+  import {inject} from "vue";
+  const { openOrderWindow } = inject('app')
   defineProps({
     Data: String,
     ImageSrc: String,
@@ -36,7 +38,7 @@
         </div>
     </div>
     <div class="grid items-center">
-        <button class="orderBtn">Заказать билет</button>
+        <button class="orderBtn" @click="openOrderWindow">Заказать билет</button>
     </div>
 </div>
 </template>
