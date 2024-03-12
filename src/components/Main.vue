@@ -22,8 +22,8 @@
           </div>
         </div>
         <div class="allMeetings">
-            <Meeting Data="3 июня" ImageSrc="/poster.jpeg" Name="Антонио Вивальди. Времена года" Info="Посвящение Фрэнку Синатре." Genre="Джаз" Time="19:00" Age="6"/>
-            <Meeting Data="30 июня" ImageSrc="/operavsoperetta.jpeg" Name="Опера VS Оперетта" Info="Санкт-Петербургский камерный оркестр Olympic Orchestra" Genre="Классика" Time="17:00" Age="12"/>
+            <Meeting Data="3 июня" ImageSrc="/poster.jpeg" Name="Антонио Вивальди. Времена года" Info="Посвящение Фрэнку Синатре." Genre="Джаз" Time="19:00" :Age="6" Price="350"/>
+            <Meeting Data="30 июня" ImageSrc="/operavsoperetta.jpeg" Name="Опера VS Оперетта" Info="Санкт-Петербургский камерный оркестр Olympic Orchestra" Genre="Классика" Time="17:00" :Age="12" Price="450"/>
         </div>
     </div>
   <div class="flex justify-center flexNewsShedule mb-28">

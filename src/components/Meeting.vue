@@ -8,7 +8,8 @@
     Info: String,
     Genre: String,
     Time: String,
-    Age: Number
+    Age: Number,
+    Price: String
   })
 </script>
 <template>
@@ -34,11 +35,12 @@
             <div class="littleInfo">
                 <img src="/age.png" alt="Age">
                 <p>{{ Age }}+</p>
-            </div>                
+            </div>
+            <p hidden="hidden">{{ Price }}</p>
         </div>
     </div>
     <div class="grid items-center">
-        <button class="orderBtn" @click="openOrderWindow">Заказать билет</button>
+        <button class="orderBtn" @click="openOrderWindow([Name, ImageSrc, Data, Price, Time])">Заказать билет</button>
     </div>
 </div>
 </template>
